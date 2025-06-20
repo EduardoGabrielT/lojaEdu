@@ -93,7 +93,8 @@ nav {
 }
 
 .texto-sobreposto h1 {
-  margin-top: 200px;
+  margin-top: 100px;
+  padding: 0 0px;
 }
 
 .texto-sobreposto p {
@@ -101,7 +102,7 @@ nav {
 }
 
 .mascote-img {
-  max-height: 250px;
+  max-height: 300px;
   width: auto;
 }
 
@@ -118,7 +119,7 @@ nav {
 }
 
 .item {
-  width: 300px;
+  width: 250px;
   background-color: white;
   border-radius: 10px;
   text-align: center;
