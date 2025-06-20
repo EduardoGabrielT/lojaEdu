@@ -228,3 +228,57 @@ nav {
     max-width: 350px;
   }
 }
+@media (max-width: 770px) {
+  .menu-toggle {
+    display: block;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+  }
+
+  .nav-left ul {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(195, 20, 50, 0.9), rgba(36, 11, 54, 0.9)); /* degradê suave */
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+
+    /* animação suave */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+
+  .nav-left ul.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-left ul li {
+    text-align: center;
+    margin: 12px 0;
+  }
+
+  .nav-left ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav-left ul li a:hover {
+    text-decoration: underline;
+  }
+}
+
+
+

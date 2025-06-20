@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    position: relative; /* Necessário para posicionamento absoluto da logo */
+    min-height: 100vh;
+  }
+
+  nav {
+    background-color: #e53935;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative; /* Mantém a navbar acima do conteúdo */
+    z-index: 10;
+  }
+
+  .nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right {
+    flex: 1;
+  }
+
+  .nav-left ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  /* Estilo para a logo flutuante */
+  .floating-logo {
+    position: absolute;
+    z-index: 20; /* Garante que fique acima de outros elementos */
+    top: 50%; /* Posição vertical inicial */
+    left: 50%; /* Posição horizontal inicial */
+    transform: translate(-50%, -50%); /* Centraliza precisamente */
+  }
+
+  .floating-logo img {
+    height: 250px; /* Tamanho aumentado */
+    width: auto;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+    transition: all 0.3s ease;
+  }
+
+  .floating-logo img:hover {
+    transform: scale(1.05);
+  }
+
+  .container {
+    padding: 80px 30px 30px; /* Aumentei o padding-top para espaço da logo */
+  }
+  .floating-logo {
+    top: 40px; /* Metade da altura da logo para sobrepor */
+    left: 500px;
+  }
+
+  .floating-logo img {
+    filter: brightness(1000%);
+    /* Quanto maior o valor, mais branca ficará a imagem */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .text-content {
+    display: block; /* Padrão - faz os elementos ficarem um em cima do outro */
+    /* Não precisa de flex/grid aqui pois quer o comportamento natural de bloco */
+  }
+
+  .mascote-img {
+    max-height: 250px;
+    width: auto;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .mascote-img {
+      margin-top: 20px;
+      max-height: 200px;
+    }
+  }
+
+  .texto-sobreposto {
+    display: block; /* Já é o padrão, mas reforça */
+   
+    max-width: 600px; /* Opcional: define uma largura máxima */
+    margin-right: none; /* Opcional: alinha o container à direita */
+  }
+  
+  /* Estilos opcionais para melhor visualização: */
+  .texto-sobreposto h1 {
+    margin-top: 200px; /* Espaço entre h1 e p */
+  }
+  
+  .texto-sobreposto p {
+    margin-top: 50px; /* Remove margem superior extra */
+  }
+
+  .container-itens {
+    display: flex;
+    justify-content: space-around; /* Espaço igual ao redor */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 30px;
+    padding: 30px;
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+
+  .item {
+    width:300PX; /* Largura fixa conforme solicitado */
+    background-color: white; /* Vermelho */
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .item:hover {
+    transform: translateY(-5px);
+  }
+
+  .item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid white;
+  }
+
+  .item p {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0;
+  }
+
+  /* Responsividade */
+  @media (max-width: 1750px) {
+    .container-itens {
+      justify-content: center; /* Centraliza quando não couber 4 itens */
+    }
+  }
+
+  @media (max-width: 500px) {
+    .item {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  /*produtos*/
+
+  .container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.item {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Para a imagem respeitar o border-radius */
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0; /* Alterei para cinza claro para combinar com fundo branco */
+    transition: border-color 0.3s;
+}
+
+.item:hover img {
+    border-color: #e53935; /* Vermelho ao hover */
+}
+
+.item p {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container-produtos {
+        justify-content: center;
+    }
+    .item {
+        width: calc(50% - 20px); /* 2 colunas */
+    }
+}
+
+@media (max-width: 600px) {
+    .item {
+        width: 100%;
+        max-width: 350px;
+    }
+}
