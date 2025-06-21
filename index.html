@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edu Lojas</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="output.css">
+
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -39,9 +40,10 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide"><img src="banner/carrinho-com-compras.png" alt="Promoção 1"></div>
+
+    <div class="swiper-slide"><img src="banner/eletronicos.png" alt="Promoção 2"></div>
+    <div class="swiper-slide"><img src="banner/loja-de-roupas.png" alt="Promoção 3"></div>
     ...
   </div>
   <!-- If we need pagination -->
@@ -91,6 +93,34 @@
     </div>
     <!-- ... demais produtos seguem igual -->
   </div>
+  <footer class="bg-gradient-to-r from-red-800 to-purple-900 text-white px-10 py-10">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
+    
+    <div>
+      <h6 class="text-lg font-bold mb-3">Services</h6>
+      <ul class="space-y-2">
+        <li><a class="hover:underline" href="#">Branding</a></li>
+        <li><a class="hover:underline" href="#">Design</a></li>
+        <li><a class="hover:underline" href="#">Marketing</a></li>
+        <li><a class="hover:underline" href="#">Advertisement</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h6 class="text-lg font-bold mb-3">Company</h6>
+      <ul class="space-y-2">
+        <li><a class="hover:underline" href="#">About us</a></li>
+        <li><a class="hover:underline" href="#">Contact</a></li>
+        <li><a class="hover:underline" href="#">Jobs</a></li>
+        <li><a class="hover:underline" href="#">Press kit</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h6 class="text-lg font-bold mb-3">Legal</h6>
+      <ul class="space-y-2">
+        <li><a class="hover:underline" href="#">Terms of use</a></li>
+
   <script>
   function toggleMenu() {
     const menu = document.querySelector('.nav-left ul');
