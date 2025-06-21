@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <!-- Navbar -->
@@ -23,6 +24,7 @@
     <!-- Carrinho -->
     <a href="carrinho.html" class="carrinho-livre" title="Ver Carrinho">
       <i class="fas fa-shopping-cart"></i>
+      <a href="#"><img src="mascote/marcote-3D.png" class="mascote-img" alt="Mascote" /></a>
     </a>
   </nav>
 
@@ -32,13 +34,31 @@
   <div class="floating-logo">
     <a href="index.html"><img src="logo/lojas-edu4.png" alt="Lojas Edu" /></a>
   </div>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+<!--aqui comoeça o container de boas vindas-->
   <div class="container">
     <div class="texto-sobreposto">
       <h1>Bem-vindo às Lojas Edu!</h1>
       <p>Conteúdo principal aqui...</p>
     </div>
-    <a href="#"><img src="mascote/marcote-3D.png" class="mascote-img" alt="Mascote" /></a>
+    
   </div>
 
   <div class="container-itens">
@@ -77,6 +97,7 @@
     menu.classList.toggle('active');
   }
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"> </script>
 </body>
 </html>
