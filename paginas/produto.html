@@ -11,13 +11,11 @@
   <link rel="stylesheet" href="../style/produto.css"> 
   <link rel="stylesheet" href="style/teste.css">
   <link rel="stylesheet" href="../style/produtos-daisy.css">
-
+   <link rel="stylesheet" href="componentes/footer.html">
   <!-- Tailwind + DaisyUI CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.18/dist/full.css" rel="stylesheet" />
 
-
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-white text-gray-800">
@@ -240,6 +238,16 @@
     </div>
   </div>
 <!-- aqui termina os cards daysiUI-->
+<!--footer-->
+<div id="footer"></div>
+<script>
+  fetch("componentes/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 
+<!--fim do footer-->
 </body>
 </html>
