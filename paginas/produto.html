@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | Lojas Edu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style/output.css">
+  <link rel="stylesheet" href="style/custom.css">
+  <!-- Seu CSS pagina produtos -->
+  <link rel="stylesheet" href="../style/produto.css"> 
+  <link rel="stylesheet" href="style/teste.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between bg-gradient-to-r from-red-800 to-purple-900 text-white px-6 py-4">
+  <!-- Menu lateral esquerdo -->
+  <div class="flex items-center space-x-6">
+    <a href="../index.html" class="font-bold hover:underline">Home</a>
+    <a href="produto.html" class="font-bold underline">Produtos</a>
+    <a href="../suporte.html" class="font-bold hover:underline">Suporte</a>
+  </div>
+
+ 
+  <!-- Carrinho e mascote -->
+  <div class="flex items-center gap-2">
+    <a href="../carrinho.html" title="Ver Carrinho">
+      <i class="fas fa-shopping-cart carrinho-icon"></i>
+    </a>
+    <a href="#">
+      <img src="../mascote/novo-mascote-3d.png" class="w-12 h-12 object-contain" alt="Mascote" />
+    </a>
+  </div>
+</nav>
+ <!-- Logo central flutuante -->
+<div class="floating-logo">
+  <a href="../index.html">
+    <img src="../logo/lojas-edu4.png" alt="Lojas Edu" />
+  </a>
+</div>
+
+  <!-- Conteúdo da página de produtos -->
+  <main class="p-6">
+    <h1 class="text-3xl font-bold mb-4">Nossos Produtos</h1>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Produto exemplo -->
+      <div class="border rounded-lg shadow p-4">
+        <img src="imagens/produto1.jpg" alt="Produto 1" class="w-full h-48 object-cover mb-2 rounded">
+        <h2 class="text-xl font-semibold">Produto 1</h2>
+        <p class="text-gray-600">Descrição do produto 1.</p>
+        <p class="text-red-600 font-bold mt-2">R$ 99,90</p>
+        <button class="mt-2 bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800">Adicionar ao Carrinho</button>
+      </div>
+
+      <!-- Adicione mais produtos copiando esse bloco -->
+    </div>
+  </main>
+</body>
+</html>

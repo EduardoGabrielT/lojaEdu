@@ -4,20 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edu Lojas</title>
-  <link rel="stylesheet" href="output.css">
-
+   <!-- Tailwind compilado -->
+  <link rel="stylesheet" href="style/output.css">
+  
+    <!-- Seu CSS customizado -->
+  <link rel="stylesheet" href="style/custom.css" />
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <!-- Navbar -->
-  <nav>
+  <nav class="relative">
+
     <div class="nav-left">
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="paginas/produto.html">Produtos</a></li>
         <li><a href="suporte.html">Suporte</a></li>
       </ul>
     </div>
@@ -25,11 +29,10 @@
     <!-- Carrinho -->
     <a href="carrinho.html" class="carrinho-livre" title="Ver Carrinho">
       <i class="fas fa-shopping-cart"></i>
-      <a href="#"><img src="mascote/marcote-3D.png" class="mascote-img" alt="Mascote" /></a>
+      <a href="#"><img src="mascote/novo-mascote-3d.png" class="mascote-img" alt="Mascote" /></a>
     </a>
   </nav>
 
-  
 
   <!-- Logo flutuante -->
   <div class="floating-logo">

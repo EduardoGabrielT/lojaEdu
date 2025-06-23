@@ -1,0 +1,53 @@
+
+.carrinho-icon {
+  font-size: 20px;
+  color: white;
+  background-color: #f44336;  /* laranja vibrante */
+  padding: 15px;
+  border-radius: 9999px; /* forma de círculo */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.carrinho-icon:hover {
+  transform: scale(1.1);
+}
+
+nav img[alt="Mascote"] {
+  width: 200px;
+  height: 100px;
+  margin-left: -30px; /* Ajusta horizontalmente */
+}
+
+
+
+.floating-logo {
+  position: absolute;
+  top: -60px; /* sobe por cima da navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  text-align: center;
+}
+
+.floating-logo img {
+  height: 250px; 
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.floating-logo img:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  background: linear-gradient(to right, #c31432, #240b36);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10;
+}

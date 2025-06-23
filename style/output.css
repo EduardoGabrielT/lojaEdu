@@ -704,7 +704,7 @@ nav {
 .floating-logo {
   display: block;
   position: absolute;
-  top: -35px;
+  top: -40px !important;
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
