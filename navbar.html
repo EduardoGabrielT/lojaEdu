@@ -1,16 +1,19 @@
-<nav>
-  <div class="nav-left">
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/paginas/produto.html">Produtos</a></li>
-      <li><a href="/suporte.html">Suporte</a></li>
-    </ul>
+<nav class="flex items-center justify-between bg-gradient-to-r from-red-800 to-purple-900 text-white px-6 py-4">
+  <!-- Menu lateral esquerdo -->
+  <div class="flex items-center space-x-6">
+    <a href="index.html" class="font-bold underline">Home</a>
+    <a href="produto.html" class="font-bold hover:underline">Produtos</a>
+    <a href="vestuario.html" class="font-bold hover:underline">Vestuário</a>
+    <a href="suporte.html" class="font-bold hover:underline">Suporte</a>
   </div>
-  <div class="nav-right">
-    <a href="/carrinho.html" class="carrinho-livre" title="Ver Carrinho">
-      <i class="fas fa-shopping-cart"></i>
+
+  <!-- Carrinho e mascote -->
+  <div class="flex items-center gap-2">
+    <a href="carrinho.html" title="Ver Carrinho">
+      <i class="fas fa-shopping-cart carrinho-icon"></i>
     </a>
-    <img src="/mascote/marcote-3D.png" class="mascote-img" alt="Mascote" />
+    <a href="#">
+      <img src="mascote/novo-mascote-3d.png" class="w-12 h-12 object-contain" alt="Mascote" />
+    </a>
   </div>
 </nav>
